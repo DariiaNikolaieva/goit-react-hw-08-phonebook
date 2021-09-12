@@ -15,7 +15,7 @@ import {
 
 import backendApi from "../../services/backend-api";
 
-const register = (credentials) => async (dispatch) => {
+const registration = (credentials) => async (dispatch) => {
   dispatch(registrationRequest());
 
   try {
@@ -28,7 +28,7 @@ const register = (credentials) => async (dispatch) => {
   }
 };
 
-const login = (credentials) => async (dispatch) => {
+const logIn = (credentials) => async (dispatch) => {
   dispatch(loginRequest());
 
   try {
@@ -54,7 +54,7 @@ const logOut = () => async (dispatch) => {
   }
 };
 
-export const getCurrentUser = () => async (dispatch, getState) => {
+const getCurrentUser = () => async (dispatch, getState) => {
   const {
     auth: { token: persistedToken },
   } = getState();
@@ -74,3 +74,6 @@ export const getCurrentUser = () => async (dispatch, getState) => {
     dispatch(getCurrentUserError(error));
   }
 };
+
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
+export { registration, logIn, logOut, getCurrentUser };
