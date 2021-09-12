@@ -1,33 +1,33 @@
 import { createAction } from "@reduxjs/toolkit";
 
-const registrationRequest = createAction("auth/registrationRequest");
-const registrationSuccess = createAction("auth/registrationSuccess");
-const registrationError = createAction("auth/registrationError");
+export const registrationRequest = createAction("auth/registrationRequest");
+export const registrationSuccess = createAction("auth/registrationSuccess");
+export const registrationError = createAction("auth/registrationError");
 
-const loginRequest = createAction("auth/loginRequest");
-const loginSuccess = createAction("auth/loginSuccess");
-const loginError = createAction("auth/loginError");
+export const loginRequest = createAction("auth/loginRequest");
+export const loginSuccess = createAction("auth/loginSuccess");
+export const loginError = createAction("auth/loginError");
 
-const logoutRequest = createAction("auth/logoutRequest");
-const logoutSuccess = createAction("auth/logoutSuccess");
-const logoutError = createAction("auth/logoutError");
+export const logoutRequest = createAction("auth/logoutRequest");
+export const logoutSuccess = createAction("auth/logoutSuccess");
+export const logoutError = createAction("auth/logoutError");
 
-const getCurrentUserRequest = createAction("auth/getCurrentUserRequest");
-const getCurrentUserSuccess = createAction("auth/getCurrentUserSuccess");
-const getCurrentUserError = createAction("auth/getCurrentUserError");
+export const getCurrentUserRequest = createAction("auth/getCurrentUserRequest");
+export const getCurrentUserSuccess = createAction("auth/getCurrentUserSuccess");
+export const getCurrentUserError = createAction("auth/getCurrentUserError");
 
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
-export default {
-  registrationRequest,
-  registrationSuccess,
-  registrationError,
-  loginRequest,
-  loginSuccess,
-  loginError,
-  logoutRequest,
-  logoutSuccess,
-  logoutError,
-  getCurrentUserRequest,
-  getCurrentUserSuccess,
-  getCurrentUserError,
-};
+// export default {
+//   registrationRequest,
+//   registrationSuccess,
+//   registrationError,
+//   loginRequest,
+//   loginSuccess,
+//   loginError,
+//   logoutRequest,
+//   logoutSuccess,
+//   logoutError,
+//   getCurrentUserRequest,
+//   getCurrentUserSuccess,
+//   getCurrentUserError,
+// };
