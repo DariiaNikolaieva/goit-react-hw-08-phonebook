@@ -11,7 +11,7 @@ const authPersistConfig = {
   whitelist: ["token"],
 };
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
     contacts: contactsReducer,
@@ -23,4 +23,4 @@ const store = configureStore({
 export const persistor = persistStore(store);
 
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
-// export default persistor;
+// export default { persistor, store };
