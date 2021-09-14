@@ -9,16 +9,16 @@ const AuthNav = () => {
       <NavLink
         to={path.registration}
         exact
-        style={styles.link}
-        activeStyle={styles.activeLink}
+        className={styles.link}
+        activeClassName={styles.activeLink}
       >
         Registration
       </NavLink>
       <NavLink
         to={path.login}
         exact
-        style={styles.link}
-        activeStyle={styles.activeLink}
+        className={styles.link}
+        activeClassName={styles.activeLink}
       >
         Login
       </NavLink>
