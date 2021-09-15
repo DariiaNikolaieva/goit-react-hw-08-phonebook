@@ -45,7 +45,7 @@ class Registration extends Component {
               type="email"
               name="email"
               value={email}
-              placeholder="Enter the email"
+              placeholder="Enter the e-mail"
               onChange={this.handleChange}
             />
           </label>

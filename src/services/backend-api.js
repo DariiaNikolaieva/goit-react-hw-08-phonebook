@@ -2,7 +2,7 @@ import axios from "axios";
 
 axios.defaults.baseURL = "https://connections-api.herokuapp.com";
 
-const token = {
+export const token = {
   set(token) {
     axios.defaults.headers.common.Authorization = `Bearer ${token}`;
   },
@@ -11,35 +11,35 @@ const token = {
   },
 };
 
-function signUp(credentials) {
+export function signUp(credentials) {
   return axios.post("/users/signup", credentials);
 }
 
-function logIn(credentials) {
+export function logIn(credentials) {
   return axios.post("/users/login", credentials);
 }
 
-function logOut() {
+export function logOut() {
   return axios.post("/users/logout");
 }
 
-function getCurrentUser() {
+export function getCurrentUser() {
   return axios.get("/users/current");
 }
 
-function getContacts() {
+export function getContacts() {
   return axios.get("/contacts");
 }
 
-function addContact(contact) {
+export function addContact(contact) {
   return axios.post("/contacts", contact);
 }
 
-function deleteContact(contactId) {
+export function deleteContact(contactId) {
   return axios.delete(`/contacts/${contactId}`);
 }
 
-function editContact(contactId) {
+export function editContact(contactId) {
   return axios.patch(`/contacts/${contactId}`);
 }
 

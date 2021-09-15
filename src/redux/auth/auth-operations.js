@@ -37,7 +37,7 @@ export const logIn = (credentials) => async (dispatch) => {
     backendApi.token.set(data.token);
     dispatch(loginSuccess(data));
   } catch (error) {
-    dispatch(loginError(error.message));
+    dispatch(loginError(error));
   }
 };
 
@@ -50,7 +50,7 @@ export const logOut = () => async (dispatch) => {
     backendApi.token.unset();
     dispatch(logoutSuccess());
   } catch (error) {
-    dispatch(logoutError(error.message));
+    dispatch(logoutError(error));
   }
 };
 
@@ -71,7 +71,7 @@ export const getCurrentUser = () => async (dispatch, getState) => {
 
     dispatch(getCurrentUserSuccess(data));
   } catch (error) {
-    dispatch(getCurrentUserError(error.message));
+    dispatch(getCurrentUserError(error));
   }
 };
 
