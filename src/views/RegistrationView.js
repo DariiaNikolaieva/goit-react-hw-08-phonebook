@@ -1,4 +1,4 @@
-import styles from "./views.css";
+import styles from "./views.module.css";
 import Registration from "../components/Registration/Registration";
 
 const RegistrationView = () => {

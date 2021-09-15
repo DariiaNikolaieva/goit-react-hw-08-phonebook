@@ -1,0 +1,9 @@
+.homeTitle {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 60px;
+
+  background-image: linear-gradient(60deg, #7c4d6a, #a5678e, #e8b7d4, #bfb8da);
+  background-clip: text;
+  color: transparent;
+}

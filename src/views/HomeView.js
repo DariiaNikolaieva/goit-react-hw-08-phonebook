@@ -1,8 +1,8 @@
-import styles from "./views.css";
+import styles from "./views.module.css";
 
 const HomeView = () => (
   <div>
-    <h1>Create your phonebook</h1>
+    <h1 className={styles.homeTitle}>Create your phonebook</h1>
   </div>
 );
 

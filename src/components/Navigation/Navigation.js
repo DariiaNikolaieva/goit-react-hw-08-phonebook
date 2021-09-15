@@ -11,8 +11,8 @@ const Navigation = ({ isAuthenticated }) => {
       <NavLink
         to={path.home}
         exact
-        // className={styles.link}
-        // activeClassName={styles.activeLink}
+        className={styles.link}
+        activeClassName={styles.activeLink}
       >
         Home
       </NavLink>
@@ -20,8 +20,8 @@ const Navigation = ({ isAuthenticated }) => {
         <NavLink
           to={path.contacts}
           exact
-          // className={styles.link}
-          // activeClassName={styles.activeLink}
+          className={styles.link}
+          activeClassName={styles.activeLink}
         >
           Contacts
         </NavLink>
